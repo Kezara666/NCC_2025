@@ -5,9 +5,9 @@ services:
     build:
       context: ./backend2
       dockerfile: Dockerfile
+    image: kezara666/gscomp311:latest  # Explicitly set the image name
     ports:
       - "5000:5000"
-
   frontend:
     image: nginx:alpine
     volumes:
